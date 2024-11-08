@@ -21,3 +21,6 @@ Correr el proyecto:
 
 Para ver el swagger:
 http://localhost:8080/swagger-ui/index.html
+
+
+Para pruebas unitarias: acceder por CMD al directorio del proyecto y ejecutar *mvn test*
