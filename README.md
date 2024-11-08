@@ -18,7 +18,7 @@ proyecto de prueba con SpringBoot - Java
     - JDBC URL : jdbc:h2:mem:prueba
     - user name : admin
     - password : admin
-* Verificar si el registro se cargo en la tabla usaurio
+* Verificar si el registro se cargo en la tabla usaurio (ejecutar _select * from usuario_)
 
 #Para ver el swagger:
 http://localhost:8080/swagger-ui/index.html
