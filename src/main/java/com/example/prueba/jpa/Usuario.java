@@ -1,5 +1,6 @@
 package com.example.prueba.jpa;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
@@ -13,9 +14,11 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    @Schema(description = "Nombre y apellido del usuario", example = "Juan Perez")
     private String name;
-
+    @Schema(description = "Email del usaurio", example = "juanperez@email.com")
     private String email;
+    @Schema(description = "Contraseña para el usuario", example = "Pass@123")
     @NotNull
     private String password;
 
@@ -28,7 +31,7 @@ public class Usuario {
     private String token;
 
     private boolean isActive;
-
+    @Schema(description = "Lista de telefonos del usuario")
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Phone> phones;
 

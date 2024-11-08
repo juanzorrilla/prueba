@@ -4,6 +4,8 @@ import com.example.prueba.jpa.Usuario;
 import com.example.prueba.response.RegistroUsuarioResponse;
 import com.example.prueba.service.UsuarioService;
 import com.example.prueba.utils.ApiException;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,6 +26,8 @@ public class UsuarioController {
         return usuarioService.obtenerTodos();
     }
 
+    @Operation(summary = "Registrar un nuevo usuario", description = "Registra un nuevo usuario en el sistema")
+    @Tag(name = "RegistrarUsuario", description = "Operación para registrar nuevos usuarios")
     @PostMapping
     public ResponseEntity<?> agregarUsuario(@Valid @RequestBody Usuario usuario) {
         try {
