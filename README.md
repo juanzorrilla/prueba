@@ -10,6 +10,7 @@ Requerido :
 Correr el proyecto:
 *  clonar el proyecto (por consola CMD ejecutar ' git clone https://github.com/juanzorrilla/prueba.git ')
 *  Acceder por CMD hasta el directorio del proyecto clonado
+*  Asegurese de estar en la rama master *git checkout master*
 *  Ejecutar *mvn clena instal -U* para descargar las dependencias del proyecto
 *  Ejecutar *mvn spring-boot:run* para levantar la aplicacion
 *  En PostMan, abrir el archivo prueba.postman_collection que se encuentra en el directorio rais del proyecto y ejecutar el request
