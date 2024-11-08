@@ -43,6 +43,13 @@ public class Usuario {
         this.token = UUID.randomUUID().toString();
     }
 
+    public Usuario(String name, String email, String password, boolean isActive) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.isActive = isActive;
+    }
+
     public UUID getId() {
         return id;
     }
