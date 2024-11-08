@@ -13,7 +13,7 @@ proyecto de prueba con SpringBoot - Java
 *  Asegurese de estar en la rama master *git checkout master*
 *  Ejecutar *mvn clean install -U* para descargar las dependencias del proyecto
 *  Ejecutar *mvn spring-boot:run* para levantar la aplicacion
-*  En PostMan, abrir el archivo *prueba.postman_collection* que se encuentra en el directorio rais del proyecto y ejecutar el request /registro
+*  En PostMan, abrir el archivo _*prueba.postman_collection*_ que se encuentra en el directorio rais del proyecto y ejecutar el request /registro
 *  En el navegadore, ingresar a localhost:8080/h2-console - datos para conectarse:
     - JDBC URL : jdbc:h2:mem:prueba
     - user name : admin
